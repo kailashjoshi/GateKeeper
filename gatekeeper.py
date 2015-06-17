@@ -25,8 +25,8 @@ FFLAGS = (select.KQ_NOTE_DELETE |
           select.KQ_NOTE_REVOKE)
 
 '''
-Watches Files and folder modification
-When event is triggered, it class DirectorySnapshot class to see the change
+Watches Files and folders modification
+When event is triggered, it calls DirectorySnapshot class to see the changes in a directory
 Supports BSD and freeBSD
 '''
 

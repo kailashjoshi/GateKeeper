@@ -1,4 +1,4 @@
-__author__ = 'KR'
+__author__ = 'Kailash Joshi'
 
 '''
 Extract message from DirectorySnapshotDiff class
@@ -13,7 +13,7 @@ class Message(object):
 
     @property
     def getMsg(self):
-        # Collect message it list is not empty
+        # Collect message if list is not empty
         if self.diff._dirs_moved:
             self.msg.append((self.diff._dirs_moved, 'Directory moved'))
         if self.diff._dirs_created:
