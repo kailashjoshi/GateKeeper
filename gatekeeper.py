@@ -68,8 +68,9 @@ class Gatekeeper(object):
                                 for m in message[0]:
                                     logging.info('{0} {1}'.format(message[1], m))
                             else:
-                                logging.info(
-                                    '{0} from {1} to {2}'.format(message[1], message[0][0][0], message[0][0][1]))
+                                for m in message[0]:
+                                    logging.info(
+                                        '{0} from {1} to {2}'.format(message[1], m[0], m[1]))
 
                         self._snapshot = new_snapshot
         except KeyboardInterrupt:

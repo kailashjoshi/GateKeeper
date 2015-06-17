@@ -15,7 +15,7 @@ class Message(object):
     def getMsg(self):
         # Collect message if list is not empty
         if self.diff._dirs_moved:
-            self.msg.append((self.diff._dirs_moved, 'Directory moved'))
+            self.msg.append((self.diff._dirs_moved, 'Directory Moved'))
         if self.diff._dirs_created:
             self.msg.append((self.diff._dirs_created, 'Directory Created'))
         if self.diff._dirs_modified:
